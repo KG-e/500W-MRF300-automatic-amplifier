@@ -1,0 +1,133 @@
+(footprint "T80_footprint"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "footprint za T80 toroidne ferrite")
+	(property "Reference" "REF**"
+		(at -1.25 -16.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e81ea6a5-3367-4c02-8a16-29bb6b3163a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "L"
+		(at -1.25 -15.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8fe6df0c-bda0-4e5f-bddc-5853f35b4be0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -1.25 -16.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7e49eafd-8b20-4f49-8a52-4297cb34242a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -1.25 -16.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24947b58-ac4e-4d24-bf9b-69b2184e1436")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -4.75 -11.75)
+		(end 4.75 11.75)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e5a1f315-f7ec-4a53-8eb8-bc6f9a0a64de")
+	)
+	(fp_rect
+		(start -3.25 -10.25)
+		(end 3.25 10.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "e548e32a-7e09-43ec-b3de-1811b4081c87")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "d0a50feb-a0c6-4771-b2df-d5a00037e791")
+	)
+	(fp_line
+		(start 4.75 0)
+		(end -4.75 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "5d9af274-bb59-4b3b-9f32-bfef286badd8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -1.25 -13.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "445b8c4d-2bab-44e4-9444-47a25ff68067")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 4.75 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "f25824b6-d0d0-4dc4-8b24-2b4f87e0179c")
+	)
+	(pad "2" thru_hole roundrect
+		(at -4.75 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "1b46027c-1db4-4839-acc4-2b1fe3f1c144")
+	)
+	(embedded_fonts no)
+)

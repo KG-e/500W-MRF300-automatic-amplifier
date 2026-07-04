@@ -1,0 +1,116 @@
+(footprint "choke-amp"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d6ae9cfe-ad94-4a23-9915-7d71ec754eaf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "478c3b97-5058-4ac8-b297-276a83dd1730")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5a7b6b93-e3d9-47b1-a1e2-41d17a933a07")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e1f8ab9b-bc2f-478d-bce0-e1b663679799")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 11 6)
+		(end 1 6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a2be54bf-32eb-4464-bd02-54e0f22638e2")
+	)
+	(fp_rect
+		(start -10 6)
+		(end 12 36)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "3a758b67-8795-4e1c-9d65-b1d7550891a3")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0923b60a-5940-461a-80d5-9f18f89982c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 10 15)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d390693a-db4f-47c7-9154-36f943d0f283")
+	)
+	(pad "1" smd rect
+		(at 10 18)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2792a31e-9bd9-4691-8f95-4a8e09f5fc26")
+	)
+	(pad "2" smd rect
+		(at -8 24)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9474e6f0-308e-4886-8213-0db186cd660f")
+	)
+	(pad "2" smd rect
+		(at -8 27)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8b19e9ef-c640-467c-9bc9-ed5d8c45cc0a")
+	)
+	(embedded_fonts no)
+)

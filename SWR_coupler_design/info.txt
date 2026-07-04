@@ -1,0 +1,10 @@
+The design of the coupler was copied from https://vk6nx.net/SWR-PWRmeter_v1.0-en.html#00
+Only small changes were made from this example.
+
+The coupler is accurate to +-0.2W when Pin<10W, +-1W when Pin>100W. Directivity is around 20dB with the internal shielding in the toroid (look at input bridge picture) 
+and around 15dB without (look at output bridge picture). Directivity worsens with higher input power. This is due to the stray capacitance between the fwd and rev ports.
+
+This design can handle around 1kW of power. vk6nex lists 2kW, but calculating directivity drop makes it unusable as a actual SWR meter at those powers.
+
+Added file is a example cal table from the amplifier. To get cal values i actualy reccomend putting the data into a LLM such as Claude, to speed up brute 
+calibration factor calculations... Cal values are stored in the custom ADC library.
