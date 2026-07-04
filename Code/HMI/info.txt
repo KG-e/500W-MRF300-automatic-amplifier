@@ -1,0 +1,2 @@
+The .HMI file can be edited in the Nextion Editor.
+The .tft file is flashed onto the HMI via sdcard.
