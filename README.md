@@ -12,9 +12,9 @@ This was a final-year high school project (slovenian "tehnična poklicna matura"
 Commercial automatic HF amplifiers with equivalent specs typically cost **3,000–5,000€**. This project was set out to build a comparable **500W HF amplifier** - with automatic band switching, automatic input leveling (attenuator), and full protection circuitry - for half the price (built for ~1,500€ including six output transistors lost to testing mishaps; a second build would cost roughly **1,300€**).
 
 Unlike most homebrew amplifiers, the goal here was full automation: no manual band switching, no manual tuning sequence - just key up and go.
-```
+
 <img width="3759" height="2040" alt="klub" src="https://github.com/user-attachments/assets/6ab15e26-8592-423f-9afe-7125a805b145" />
-```
+
 ## Key Features
 
 - **Fully automatic operation** - no manual warm-up/tuning procedure required
@@ -41,20 +41,20 @@ Unlike most homebrew amplifiers, the goal here was full automation: no manual ba
 
 ## How It Works
 
-```
+
 <img width="1030" height="707" alt="block sheme" src="https://github.com/user-attachments/assets/ebda724a-c78e-44e1-b86b-b1060f62fdb8" />
-```
+
 **Transmit state machine:** `INIT → WAIT → FIRST START → INPUT SETUP → LOW POWER TX → TX SWITCH → HIGH POWER TX → READY`. The "ready" state remembers the last transmission and skips most of the setup sequence on the next key-up for faster switching, useful for competition use.
 
-```
+
 <img width="1764" height="1110" alt="statemachine" src="https://github.com/user-attachments/assets/f326f33c-fa40-4045-8bbf-6fcecfdc51e4" />
-```
+
 
 ## Power/SWR Measurement
 
 Power and SWR are measured using a **tandem match coupler**, rather than a simple directional coupler, since directional couplers perform poorly at low freq. HF. Two transformers (current and voltage) are summed/negated to separate forward and reflected power. Each direction feeds an **AD8310** logarithmic RF power detector (for accuracy across a wide dynamic range, from milliwatts to hundreds of watts), digitized by two 16-bit **ADS1115** ADCs over I2C.
 
-## Boards (PCBs)
+## Boards 
 | 1 | Attenuator board | Auto input attenuator (relay-switched, 0.5–6 dB stages, 8 stage), input power/SWR meter, built-in 50ohm dummy load 
 
 | 2 | MCU board | Carrier board for ATmega2560 + ATmega16U2 (Arduino Mega-derived); one per controller 
